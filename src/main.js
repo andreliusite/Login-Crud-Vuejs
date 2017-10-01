@@ -14,7 +14,7 @@ Vue.config.productionTip = false
 Vue.use(VueResource)
 Vue.use(Auth)
 
-// Navigation Guards with vue-router
+// Navigation Guards with vue-router sec...
 router.beforeEach((to, from, next) => {
 	 	if (to.matched.some(record => record.meta.requires)) {
 	 		if (Vue.auth.isAuthenticated()) {
